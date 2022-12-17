@@ -9,6 +9,11 @@ public class Car extends Vehicle {
     private int currentGear;
     private int seats;
 
+    public Car(String name, int wheels) {
+        super(name);
+        //Hint: Car extends Vehicle
+        setWheels(wheels);
+    }
     public int getWheels() {
         return wheels;
     }
@@ -58,19 +63,7 @@ public class Car extends Vehicle {
         this.currentGear = 1;
     }
 
-    public int getSeats() {
-        return seats;
-    }
 
-    public void setSeats(int seats) {
-        this.seats = seats;
-    }
-
-    public Car(String name, int wheels) {
-        //Hint: Car extends Vehicle
-        super("Name");
-        this.wheels=wheels;
-    }
 
     public void changeGear(int newGear){
         this.currentGear=newGear;

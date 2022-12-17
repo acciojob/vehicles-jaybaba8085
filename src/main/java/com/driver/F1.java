@@ -59,6 +59,11 @@ public class F1 extends Car {
             setCurrentDirection(getCurrentDirection());
 //            changeSpeed(newSpeed,getCurrentDirection());
             changeGear(6);
+            if(newSpeed>0)
+            {
+                changeGear(1);
+                changeSpeed(newSpeed,getCurrentDirection());
+            }
         }
     }
 }
